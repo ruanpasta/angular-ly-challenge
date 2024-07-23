@@ -1,0 +1,40 @@
+<div class="dashboard">
+  @if (!loading && deliveries.length) {
+  <app-delivery-table
+    class="dashboard__table"
+    id="success-deliveries"
+    [value]="driverSuccessDeliveries"
+    [columns]="['Motorista', 'Total de entregas', 'Entregas realizadas']"
+    [keys]="['agentName', 'deliveryAmount', 'successDeliveryAmount']"
+  />
+
+  <app-delivery-table
+    class="dashboard__table"
+    id="failed-deliveries"
+    [value]="driverFailedDeliveries"
+    [columns]="['Motorista', 'Entregas falhas']"
+    [keys]="['agentName', 'failedDeliveryAmount']"
+  />
+
+  <app-delivery-table
+    class="dashboard__table"
+    id="neighborhood"
+    [value]="neighborhoodDeliveries"
+    [columns]="['Bairro', 'Total de entregas', 'Entregas realizadas']"
+    [keys]="['agentName', 'deliveryAmount', 'successDeliveryAmount']"
+  />
+  } @else if (!loading && !deliveries.length) {
+  <p-messages
+    [value]="[{ severity: 'secondary', detail: 'Nenhuma entrega encontrada' }]"
+    [enableService]="false"
+  />
+  } @else {
+  <div class="dashboard__spinner">
+    <p-progressSpinner
+      [style]="{ height: '50px' }"
+      strokeWidth="4"
+      animationDuration=".5s"
+    />
+  </div>
+  }
+</div>

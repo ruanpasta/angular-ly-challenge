@@ -1,0 +1,17 @@
+.dashboard {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin: 1rem 0;
+
+  &__table {
+    border: 1px solid var(--color-border);
+    border-radius: 8px;
+    overflow: hidden;
+  }
+
+  &__spinner {
+    display: flex;
+    justify-content: center;
+  }
+}

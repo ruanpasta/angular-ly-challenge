@@ -1,0 +1,9 @@
+.delivery-page {
+  margin-top: 1rem;
+
+  &__table {
+    border: 1px solid var(--color-border);
+    border-radius: 8px;
+    overflow: hidden;
+  }
+}

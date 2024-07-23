@@ -1,27 +1,32 @@
 # LyncasChallenge
+ 
+Hello! I'm Ruan Pasta and for this project, I'll use the framework Angular with the latest features.
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.1.1.
+For state management I'll use the RxJS. Other great option to work with state managament nowadays is Signals.
 
-## Development server
+For the UI, I'll use the PrimeNG. That give us great and complete solutions for components.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+For the data part, I'll use the json-server, to get a more realistic API connection, following the REST pattern.
+Unfortunately, the json-server have some limitation, and this is the reason why I don't resend a request with a pagination or clear other querys when I make a request.
 
-## Code scaffolding
+# Running the project
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+Install the dependencies:
+> npm install
 
-## Build
+Start the project:
+> npm start
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+Build:
+> npm run build
 
-## Running unit tests
+Runing the tests:
+> npm run test
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+Unfortunately, I don't have a time to make the tests in this challenge. But with you wanna see other challenge that I did with some tests, folow the link:
+https://github.com/ruanpasta/angular-crud-challenge
 
-## Running end-to-end tests
+# Server (Important)
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+This project use a json-server, so to have a better expirience run the server:
+> npm run server
